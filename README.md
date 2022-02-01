@@ -20,6 +20,22 @@ It's intended as only a personal project, but feel free to use it (See [LICENSE]
 1. A new log should be printed to your terminal every second
 
 
+## Modifying/Compiling
+
+To play with the code, you will need to clone [pico SDK](https://github.com/raspberrypi/pico-sdk) and set the environment variable `PICO_SDK_PATH` as the path to where you cloned it.
+
+`pico_sdk_import.cmake` is copied from the SDK mentioned above, so you should check the license terms in the pico-sdk repository before using it.
+
+### Compilation
+```SH
+mkdir -p build
+rm -rf build/*
+cd build
+cmake ../
+make -j20
+```
+
+
 ## Inputs
 
 Currently there are only 2 inputs:
