@@ -1,0 +1,3 @@
+# Stuff to not commit
+.vscode/**
+build/**
